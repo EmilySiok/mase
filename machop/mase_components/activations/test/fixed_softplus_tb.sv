@@ -91,7 +91,7 @@ initial begin
     //input= -3
     #10 data_in_0[0] = 16'hFFFD;
     data_in_0_valid = 1;
-    data_out_0_ready = 0;
+    data_out_0_ready = 0;    //check what happens when data_out not ready and data_in valid
     #10 data_in_0_valid = 0;
     #20;
     
